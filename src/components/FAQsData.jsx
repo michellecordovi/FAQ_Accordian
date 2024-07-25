@@ -16,3 +16,5 @@ const questions = [
         answer: "The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of other developers in there, so it's a great place to ask questions. We even have a dedicated 'help' channel! If you haven't joined yet, you can get an invite to our Discord."
     }
 ]
+
+export default questions;
