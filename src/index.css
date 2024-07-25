@@ -8,6 +8,7 @@
 body{
     background-color: hsl(275, 100%, 97%);
     position: relative;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
 }
 
 main{
