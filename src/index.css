@@ -25,6 +25,7 @@ h1 {
 
 h2{
     font-size: 18px;
+    display: inline-block;
 }
 
 p{
@@ -42,14 +43,40 @@ p{
 /* CARD COMPONENT */
 #FAQCard{
     background-color:hsl(0, 0%, 100%);
-    width: 600px;
+    width: 40%;
+    max-width: 800px;
     padding: 40px;
     border-radius: 1rem;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
 }
 
 /* HEADER */
 .header{
     display: flex;
     align-items: center;
+}
+
+#question-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 48px;
+}
+
+.question-header{
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.question-header svg{
+    justify-self: end;
+}
+
+.answer {
+    display: none;
 }

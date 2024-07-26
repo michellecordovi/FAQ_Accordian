@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "What is Frontend Mentor",
+        question: "What is Frontend Mentor and how will it help me?",
         answer: "Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and Javascript. It's suitable for all levels and ideal for portfolio building."
     },
     { 
