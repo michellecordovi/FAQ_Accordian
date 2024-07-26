@@ -96,7 +96,13 @@ p{
     cursor: pointer;
 }
 
-.question-and-answer .answer {
+.minus{
+    display: none;
+}
+
+.answer {
+    max-height: 0px;
+    opacity: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, opacity 0.5s linear;
 }
