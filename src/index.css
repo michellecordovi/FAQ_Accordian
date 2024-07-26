@@ -30,6 +30,8 @@ h2{
 
 p{
     font-size: 16px;
+    color: hsl(292, 16%, 49%);
+    line-height: 1.5rem;
 }
 
 #background-img svg{
@@ -57,26 +59,44 @@ p{
 .header{
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
+
+/* QUESTION GRID */
 #question-grid{
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 48px;
 }
 
+.question-and-answer{
+    transition: all 3s ease-out;
+}
+
 .question-header{
     margin-bottom: 24px;
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: auto auto;
     justify-items: space-between;
     align-items: center;
+    column-gap: 1.5rem;
+}
+
+.question:hover {
+    color: hsl(281, 83%, 54%)
 }
 
 .question-header svg{
     justify-self: end;
 }
 
-.answer {
-    display: none;
+.question:hover,
+.question-header svg:hover{
+    cursor: pointer;
+}
+
+.question-and-answer .answer {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s linear;
 }
