@@ -8,21 +8,24 @@ function QuestionAndAnswer(props) {
         const parent = event.target.closest(".question-header")
         const answer = parent.nextSibling;
 
-        if(!open) {
-            setOpen(true);
-            answer.style.maxHeight = "200px";
-            answer.style.opacity= "1";
-            parent.querySelector(".minus").style.display = "block";
-            parent.querySelector(".plus").style.display = "none";
-        } else {
-            setOpen(false);
-            answer.style.maxHeight = "0px";
-            answer.style.opacity= "0";
-            setTimeout(() => {
-                parent.querySelector(".minus").style.display = "none";
-                parent.querySelector(".plus").style.display = "block";
-            }, 500)
-        }
+        setOpen(() =>{
+            if(!open) {
+                answer.style.maxHeight = "200px";
+                answer.style.opacity= "1";
+                parent.querySelector(".minus").style.display = "block";
+                parent.querySelector(".plus").style.display = "none";
+                return true;
+            } else {
+                answer.style.maxHeight = "0px";
+                answer.style.opacity= "0";
+                setTimeout(() => {
+                    parent.querySelector(".minus").style.display = "none";
+                    parent.querySelector(".plus").style.display = "block";
+                }, 500);
+                return false;
+            }
+        });
+    
     }
 
     return (
