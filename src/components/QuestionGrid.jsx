@@ -5,7 +5,7 @@ import QuestionAndAnswer from './QuestionAndAnswer';
 function QuestionsGrid() {
     return (
         <div id="question-grid">
-            {questions.map((item, index) => <QuestionAndAnswer key={index} question={item.question} answer={item.answer}/>)}
+            {questions.map((item, index) => <QuestionAndAnswer key={index} index={questions.indexOf(item)} question={item.question} answer={item.answer}/>)}
         </div>
     )
 }

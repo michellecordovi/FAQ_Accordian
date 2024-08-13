@@ -71,15 +71,18 @@ p{
 #question-grid{
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 48px;
 }
 
 .question-and-answer{
-    transition: all 3s ease-out;
+    padding: 24px 0px;
+    align-self: center;
+}
+
+.not-first-question{
+    border-top: 1px solid hsl(275, 100%, 97%);
 }
 
 .question-header{
-    margin-bottom: 24px;
     display: grid;
     grid-template-columns: auto auto;
     justify-items: space-between;
@@ -108,5 +111,5 @@ p{
     max-height: 0px;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s linear;
+    transition: max-height 0.25s ease-in-out, opacity 0.25s ease-out, margin-top 0.25s ease-in-out;
 }
